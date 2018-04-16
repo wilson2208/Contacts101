@@ -9,6 +9,7 @@
 import UIKit
 
 class ContactListCellTableViewCell : UITableViewCell {
+    
     @IBOutlet var contactName : UILabel!
     
     override func awakeFromNib() {

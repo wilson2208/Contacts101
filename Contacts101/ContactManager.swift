@@ -45,7 +45,5 @@ final class ContactManager {
         })
     }
     
-    
-    
 }
 
