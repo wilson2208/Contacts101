@@ -21,6 +21,12 @@ final class ContactManager {
     }
     
     func loadContacts() -> Void{
+        
+        self.isContactsFetching = false
+        
+        NotificationCenter.default.post(name: Notifications.CONTACTS_LOAD_DONE, object: nil)
+        
+        
         AppDelegate.getAppDelegate().requestForContactAccess(completionHandler: {
             accessGranted in
             self.isContactsFetching = true

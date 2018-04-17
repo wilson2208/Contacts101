@@ -25,6 +25,20 @@ class ContactsListViewController: UIViewController {
         activityIndicator()
         contacts = ContactManager.shared.contacts
         
+        NotificationCenter.default.addObserver(self, selector: #selector(contactsLoadDone), name: Notifications.CONTACTS_LOAD_DONE, object: nil)
+ 
+    }
+    
+    func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
+    @objc func contactsLoadDone() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func addContactPressed(_ sender: Any) {
@@ -67,6 +81,7 @@ class ContactsListViewController: UIViewController {
 //MARK : Extending the viewController to add the methods numberOfRowsInSection, cellForRowAtIndex, and didSelectRowAt
 extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return contacts.count
     }
     
@@ -81,7 +96,7 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
         let contactName:String? = ("\(contacts[indexPath.row].givenName) \(contacts[indexPath.row].familyName)")
         
         cell.contactName?.text = contactName
-        
+    
         return cell
     }
     

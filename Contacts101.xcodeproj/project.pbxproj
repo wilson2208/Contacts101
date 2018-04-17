@@ -18,6 +18,7 @@
 		8E926A392082EA8A00EF928B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E926A372082EA8A00EF928B /* LaunchScreen.storyboard */; };
 		8E926A442082EA8A00EF928B /* Contacts101Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E926A432082EA8A00EF928B /* Contacts101Tests.swift */; };
 		8E926A4F2082EA8A00EF928B /* Contacts101UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E926A4E2082EA8A00EF928B /* Contacts101UITests.swift */; };
+		8EF708D12086996500FC8B40 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF708D02086996500FC8B40 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		8E926A4A2082EA8A00EF928B /* Contacts101UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Contacts101UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E926A4E2082EA8A00EF928B /* Contacts101UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts101UITests.swift; sourceTree = "<group>"; };
 		8E926A502082EA8A00EF928B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF708D02086996500FC8B40 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		BFA449944EE9D3A03AD478E8 /* Pods_Contacts101Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts101Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				8E926A352082EA8A00EF928B /* Assets.xcassets */,
 				8E926A372082EA8A00EF928B /* LaunchScreen.storyboard */,
 				8E926A3A2082EA8A00EF928B /* Info.plist */,
+				8EF708D02086996500FC8B40 /* Notifications.swift */,
 			);
 			path = Contacts101;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF708D12086996500FC8B40 /* Notifications.swift in Sources */,
 				8E651FE8208412B500CCA9BC /* ContactListCellTableViewCell.swift in Sources */,
 				8E926A312082EA8900EF928B /* ViewController.swift in Sources */,
 				8E1365A02083C2E100BA7DEB /* ContactManager.swift in Sources */,

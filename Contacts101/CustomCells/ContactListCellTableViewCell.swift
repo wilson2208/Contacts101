@@ -24,8 +24,4 @@ class ContactListCellTableViewCell : UITableViewCell {
     }
     
     
-    
-    
-    
-    
 }
